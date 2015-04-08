@@ -17,7 +17,7 @@ var librairies = Object.keys(packageJSON.dependencies);
 gulp.task('browserify', function() {
 	var browserifyConfig = watchify(browserify(files.browserifyEntry, watchify.args));
 
-	browserifyConfig.plugin(remapify, ['utils'].map(function(folder) {
+	browserifyConfig.plugin(remapify, ['utils', 'abstract', 'emitter'].map(function(folder) {
 
 		return {
 			src: './**/*.js',
