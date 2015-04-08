@@ -34,7 +34,7 @@
     "watchify": "^2.3.0"
   },
   "browser": {
-    "preloadjs": "pathto/preloadjs-0.6.0.min.js"
+    "preloadjs": "./pathto/preloadjs-0.6.0.min.js"
   },
   "browserify": {
     "transform": [
