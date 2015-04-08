@@ -1,2 +1,2 @@
 # config-starter
-Git and linters config
+Git, gulp & linter configuration files
