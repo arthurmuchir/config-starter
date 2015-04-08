@@ -2,8 +2,7 @@ module.exports = {
 	delEntry: [
 		'**/.DS_Store',
 		'app/public/dist',
-		'npm-debug.log',
-		'.sass-cache'
+		'npm-debug.log'
 	],
 	copyEntry: [
 		'app/public/src/*',
