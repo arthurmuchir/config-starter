@@ -7,6 +7,10 @@
     "type": "git",
     "url": ""
   },
+  "scripts": {
+  	"watch": "gulp default",
+  	"build": "gulp build"
+  },
   "dependencies": {
     "bluebird": "^2.9.24",
     "component-raf": "^1.2.0",

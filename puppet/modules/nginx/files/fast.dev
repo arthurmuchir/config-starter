@@ -15,5 +15,5 @@ server {
 		include fastcgi_params;
 	}
 
-    sendfile off;
+	sendfile off;
 }
