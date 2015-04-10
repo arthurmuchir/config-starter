@@ -6,11 +6,6 @@ var errorHandler = require('../error-handler');
 
 gulp.task('template', function() {
 	gulp.src(files.templateEntry)
-		// .pipe(nunjucks({
-		// 	name: function(file) {
-		// 		return 'partials/' + file.relative;
-		// 	}
-		// }))
 		.pipe(nunjucks())
 		.on('error', errorHandler)
 		.pipe(gulp.dest(files.templateDest));
