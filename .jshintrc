@@ -13,6 +13,9 @@
 	// Define globals exposed by Node.js.
 	"node": true,
 
+	// Allow ES6.
+	"esnext": true,
+
 	/*
 	 * ENFORCING OPTIONS
 	 * =================
@@ -32,7 +35,7 @@
 	"latedef": true,
 
 	// Require capitalized names for constructor functions.
-	"newcap": false,
+	"newcap": true,
 
 	// Enforce use of single quotation marks for strings.
 	"quotmark": "single",
