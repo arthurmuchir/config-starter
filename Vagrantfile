@@ -14,16 +14,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 	config.vm.network "public_network"
 
-	config.trigger.after :up do
-		info "Starting mailcatcher..."
-		run "vagrant ssh -c 'mailcatcher --http-ip=0.0.0.0'"
-	end
-
-	config.trigger.before :halt do
-		info "Dumping the database..."
-		run "vagrant ssh -c 'mysqldump -uroot -p123 vagrantdb > /vagrant/db/dump.sql'"
-	end
-
 	config.vm.synced_folder ".", "/vagrant", nfs: true
 
 	config.vm.provider "virtualbox" do |vb|
