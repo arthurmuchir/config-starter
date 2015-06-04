@@ -1,5 +1,5 @@
 class php {
-	package { ['php5-fpm', 'php5-mysql']:
+	package { ['php5-fpm', 'php5-mysql', 'php5-sqlite']:
 		ensure => 'present',
 	}
 
