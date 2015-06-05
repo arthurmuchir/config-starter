@@ -14,7 +14,7 @@ module.exports = {
 	copyBase: 'app/public/src',
 	browserifyEntry: './app/public/src/media/js/main.js',
 	browserifyDest: 'app/public/dist/media/js',
-	cssEntry: 'app/public/src/media/scss/**/*.scss',
+	cssEntry: 'app/public/src/media/stylus/main.styl',
 	cssDest: 'app/public/dist/media/css',
 	cssBase: 'app/public/src',
 	lintEntry: 'app/public/src/media/js/**/*.js',
