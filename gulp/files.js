@@ -17,6 +17,7 @@ module.exports = {
 	cssEntry: 'app/public/src/media/stylus/main.styl',
 	cssDest: 'app/public/dist/media/css',
 	cssBase: 'app/public/src',
+	cssWatch: 'app/public/src/media/stylus/**/*.styl',
 	lintEntry: 'app/public/src/media/js/**/*.js',
 	remapifyEntry: 'app/public/src/media/js',
 	templateEntry: 'app/views/**/*.html',
