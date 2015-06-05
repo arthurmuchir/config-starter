@@ -2,7 +2,7 @@ var files = require('../files');
 var gulp = require('gulp');
 var base64 = require('gulp-base64');
 var filter = require('gulp-filter');
-var sass = require('gulp-sass');
+var stylus = require('gulp-stylus');
 var minifyCSS = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var reload = require('browser-sync').reload;
@@ -13,7 +13,7 @@ gulp.task('css', function() {
 
 	return gulp.src(files.cssEntry)
 		.pipe(sourcemaps.init())
-		.pipe(sass())
+		.pipe(stylus())
 		.on('error', errorHandler)
 		.pipe(base64({
 			baseDir: files.cssBase,
