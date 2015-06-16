@@ -31,6 +31,7 @@
     "disallowMultipleLineBreaks": true,
     "disallowMultipleLineStrings": true,
     "disallowMultipleVarDecl": true,
+    "esnext": true,
     "requireSpaceBeforeBlockStatements": true,
     "requireParenthesesAroundIIFE": true,
     "requireSpacesInConditionalExpression": true,
