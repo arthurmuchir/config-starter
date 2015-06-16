@@ -1,7 +1,7 @@
 class nginx {
 	file { '/var/www/app':
 		ensure => 'link',
-		target => '/vagrant',
+		target => '/vagrant/dist',
 	}
 
 	package { 'nginx':
