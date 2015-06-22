@@ -4,6 +4,7 @@ var watchify = require('watchify');
 var uglify = require('gulp-uglify');
 var buffer = require('vinyl-buffer');
 var browserify = require('browserify');
+var remapify = require('remapify');
 var reload = require('browser-sync').reload;
 var sourcemaps = require('gulp-sourcemaps');
 var source = require('vinyl-source-stream');
@@ -15,6 +16,14 @@ var librairies = Object.keys(packageJSON.dependencies);
 
 gulp.task('browserify', function() {
 	var browserifyConfig = watchify(browserify(files.browserifyEntry, watchify.args));
+
+	browserifyConfig.plugin(remapify, ['utils', 'abstract', 'emitter'].map(function(folder) {
+		return {
+			src: './**/*.js',
+			expose: folder,
+			cwd: process.cwd() + '/' + files.remapifyEntry + '/' + folder
+		};
+	}));
 
 	function rebundle() {
 		browserifyConfig
