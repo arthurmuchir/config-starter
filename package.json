@@ -44,6 +44,7 @@
 	"browserify": {
 		"transform": [
 			"babelify",
+			"brfs",
 			"browserify-shim",
 			"stringify"
 		]
