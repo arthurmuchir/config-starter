@@ -61,7 +61,6 @@
         "catch",
         "typeof"
     ],
-    "requirePaddingNewLinesAfterBlocks": true,
     "requireSemicolons": true,
     "safeContextKeyword": "_this",
     "validateLineBreaks": "LF",
